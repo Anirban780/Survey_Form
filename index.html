@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="Survey_Form1.webp", id="logo1">
+        <h1 id="text1">Programming Survey</h1>
+        <img src="Survey_Form2.webp", id="logo2">
+        
+    </header><br>
+
+    <div class="survey_front">
+        <form class="surveyForm" id="survey_form">
+            <div class="form-grp2">
+                    <div class="form-grp">
+                        <label for="programming-experience">
+                        1. How would you describe your programming experience ? </label><br>
+                        <label>
+                            <input type="radio" name="programming-experience" value="none" class="q1">None
+                        </label><br>
+                        
+                        <label>
+                            <input type="radio" name="programming-experience" value="beginner" class="q1">Beginner
+                        </label><br>
+                        
+                        <label>
+                            <input type="radio" name="programming-experience" value="intermediate" class="q1">Intermediate
+                        </label><br>
+                        
+                        <label>
+                            <input type="radio" name="programming-experience" value="advanced" class="q1">Advanced
+                        </label><br>
+                    </div>
+
+                    <div class="form-grp">
+                        <label for="favorite_language">2. What is your favorite programming language?</label><br>
+                        <input type="text" id="favorite_language" name="favorite_language">
+                    </div><br>
+
+                    <div class="form-grp">
+                        <label for="reason_favorite_language">3. What is the reason you like this programming language?</label><br>
+                        <textarea id="reason_favorite_language" name="reason_favorite_language" rows="4" cols="50" class="q1"></textarea>
+                    </div>
+                    
+                    <div class="form-grp">
+                        <label for="challenges">4. What challenges do you face while programming?</label><br>
+                        <input type="checkbox" id="syntax_errors" name="challenges" value="Syntax Errors" class="q1">Syntax Errors<br>
+                        <input type="checkbox" id="debugging" name="challenges" value="Debugging" class="q1">Debugging<br>
+                        <input type="checkbox" id="optimization" name="challenges" value="Performance Optimization"
+                            class="q1">Performance Optimization<br>
+                        <input type="checkbox" id="learning" name="challenges" value="Learning New Technologies"
+                            class="q1">Learning New Technologies<br>
+                    </div>
+                    
+                    <div class="form-grp">
+                        <label>5. Would you recommend programming as a career to others?</label><br>
+                        <label><input type="radio" name="recommendation" value="yes" class="q1"> Yes</label><br>
+                        <label><input type="radio" name="recommendation" value="no" class="q1"> No</label><br>
+                    </div>
+                    
+                    <div class="form-grp">
+                        <label for="project_experience">6. How much experience do you have with programming projects?</label><br>
+                        <select id="project_experience" name="project_experience" class="q1">
+                            <option value="none">None</option>
+                            <option value="some">Some</option>
+                            <option value="a lot">A lot</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-grp">
+                        <label for="learning_platform">7. Where do you prefer to learn programming?</label><br>
+                        <select id="learning_platform" name="learning_platform" class="q1">
+                            <option value="online_courses">Online courses</option>
+                            <option value="books">Books</option>
+                            <option value="tutorials">Tutorials</option>
+                            <option value="bootcamps">Bootcamps</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+            </div> 
+        </form>
+    </div><br>
+
+    <footer class="footer">
+        <button type="reset" onclick="myFunction()" 
+            class="logo3 button1" id="navigate_button1">Reset</button>
+
+        <div id="foot1">
+            <p class="logo2">Thank you for participating in our survey!</p>
+            <p class="logo2">Copyright@2024 SurveyCorp.Inc</p>
+        </div>
+        
+        <button class="logo3 button2"
+            onclick="window.location.href = 'survey_form_page2.html';">Next</button>
+    </footer>
+    
+    <script>
+        function myFunction() {
+          document.getElementById("survey_form").reset();
+        }
+        </script>
+</body>
+</html>

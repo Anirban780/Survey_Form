@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="Survey_Form1.webp", id="logo1">
+        <h1 id="text1">Programming Survey</h1>
+        <img src="Survey_Form2.webp", id="logo2">
+        
+    </header><br>
+
+    <div class="survey_front">
+        <form class="surveyForm">
+            <div class="form-grp3">
+                <p><b>Fill up the details below to record your Survey Data:</b></p>
+                Name: <input type="text" name="name" id="name"><br>
+                Email Address: <input type="email" id="email" name="email"><br>
+
+            </div> 
+        </form>
+    </div><br>
+                            
+    <footer class="footer">
+        <button class="logo3 button1"
+            onclick="window.location.href = 'index.html';">Prev</button>
+
+        <div id="foot1">
+            <p class="logo2">Thank you for participating in our survey!</p>
+            <p class="logo2">Copyright@2024 SurveyCorp.Inc</p>
+        </div>
+        
+        <button type="submit" class="logo3 button2" id="navigate_button2"
+            onclick="myFunction()">Submit</button>
+    </footer>
+    
+    <script>
+        function myFunction(){
+            alert("Your record was successfully submitted!");
+        }
+    </script>
+</body>
+</html>
